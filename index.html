@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./imagens/favicon.ico">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Dragões</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <img src="./imagens/fundoBranco1.png" alt="logo">
+            <div class="menu-section">
+                <div class="container-menu">
+
+                    <input type="checkbox" id="checkbox-menu">
+                    <label for="checkbox-menu" class="menu-botton-container">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+
+                    <nav>
+                        <ul>
+                            <li> <a href="#">Home</a></li>
+                            <li> <a href="#">Artigos</a></li>
+                            <li> <a href="#">Contato</a></li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-main">
+            <div>
+                <h2><span>Inscreva-se</span></h2>
+                <h2>Newsletter</h2>
+                <h3>
+                    Conhecendo o universo dos Dragões
+                </h3>
+                <form>
+                    <input type="text" placeholder="Nome" />
+                    <input type="email" placeholder="E-mail" />
+                    <input type="submit" value="Enviar" />
+
+                </form>
+
+            </div>
+            <img src="./imagens/fundoBranco.jpg" alt="">
+        </div>
+
+    </main>
+    <section class="cards">
+
+        <div class="card">
+            <div class="image">
+                <img src="./imagens/fundoBranco.jpg">
+            </div>
+
+            <div class="content">
+                <p class="title text--medium">
+                    Criaturas cheias de magias e encantadoras que invadem as telinhas todos os dias.
+                </p>
+                <div class="info">
+                    <p class="text--medium">Dragon</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="./imagens/fundoBranco.jpg">
+            </div>
+
+            <div class="content">
+                <p class="title text--medium">
+                    Criaturas cheias de magias e encantadoras que invadem as telinhas todos os dias.
+                </p>
+                <div class="info">
+                    <p class="text--medium">Dragon</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="./imagens/fundoBranco.jpg">
+            </div>
+
+            <div class="content">
+                <p class="title text--medium">
+                    Criaturas cheias de magias e encantadoras que invadem as telinhas todos os dias.
+                </p>
+                <div class="info">
+                    <p class="text--medium">Dragon</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="./imagens/fundoBranco.jpg">
+            </div>
+
+            <div class="content">
+                <p class="title text--medium">
+                    Criaturas cheias de magias e encantadoras que invadem as telinhas todos os dias.
+                </p>
+                <div class="info">
+                    <p class="text--medium">Dragon</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="container-forms">
+
+        <div class="forms">
+            <form action="#" method="post">
+
+                <fieldset class="dadosPessoais">
+
+                    <div>
+                        <legend>Queremos entrar em contato</legend>
+                        <label for="name"></label>
+                        <input type="text" id="name" placeholder="Digite seu nome" maxlength="60" required>
+                    </div>
+
+                    <div>
+                        <label for="idade"></label>
+                        <input type="number" id="idade" min="1" max="110" placeholder="Idade">
+                    </div>
+
+                    <div>
+                        <label for="email"> </label>
+                        <input type="email" id="email" placeholder="example@email.com" required>
+                    </div>
+
+                    <div>
+                        <label for="iestados"></label>
+                        <input list="estados" name="estados" id="iestados" placeholder="Estado">
+
+                        <datalist id="estados">
+                            <option value="Acre">
+                            <option value="Alagoas">
+                            <option value="Amapá">
+                            <option value="Amazonas">
+                            <option value="Bahia">
+                            <option value="Ceará">
+                            <option value="Distrito Federal">
+                            <option value="Espírito Santo">
+                            <option value="Goias">
+                            <option value="Maranhão">
+                            <option value="Mato Grosso">
+                            <option value="Mato Grosso do Sul">
+                            <option value="Minas Gerais">
+                            <option value="Pará">
+                            <option value="Paraiba">
+                            <option value="Paraná">
+                            <option value="Pernambuco">
+                            <option value="Piaui">
+                            <option value="Rio de Janeiro">
+                            <option value="Rio Grande do Norte">
+                            <option value="Rio Grande do Sul">
+                            <option value="Rondônia">
+                            <option value="Roraima">
+                            <option value="Santa Catarina">
+                            <option value="São Paulo">
+                            <option value="Sergipe">
+                            <option value="Tocantins">
+                        </datalist>
+
+                    </div>
+                </fieldset>
+
+
+
+                <fieldset class="informacoes-adicionais">
+
+                    <div>
+                        <legend>Queremos saber como nos encontrou:</legend>
+                        <label for="mensagem"></label>
+                        <textarea id="mensagem" name="mensagem" rows="10" cols="50">Escreva aqui sua mensagem</textarea>
+                    </div>
+
+                    <div class="radio">
+                        <p>Você aceita receber nossas novidades em seu e-mail?</p>
+                        <div>
+                            <label for="sim">Sim</label>
+                            <input type="radio" id="sim" name="new" value="S">
+
+                        </div>
+                        <div>
+                            <label for="nao">Não</label>
+                            <input type="radio" id="nao" name="new" value="N">
+
+                        </div>
+
+
+                    </div>
+                </fieldset>
+
+                <div>
+                    <input type="submit" name="enviar" id="envie">
+                </div>
+
+            </form>
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>

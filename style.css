@@ -1,0 +1,579 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Raleway:wght@100;200&display=swap');
+
+*{
+    box-sizing:border-box;
+}
+
+html, body{
+    height: 100vh;
+    font-family:  'amatic sc', sans-serif;
+   
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+HEADER
+header{
+    background-color: rgb(7, 61, 61);
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 940px;
+    height: 80px;
+    margin: auto;
+
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color:rgb(26, 18, 18);
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 24px;
+    transition: all 250ms linear 0s;
+}
+ header nav ul li a:hover{
+     background: rgb(2, 59, 29);
+ }
+
+ header .container img{
+     height: 30px;
+ }
+
+ /*MAIN
+
+ main{
+     margin-bottom: 100px;
+ }
+
+ main .container-main{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     max-width: 940px;
+     margin: 100px auto 0px auto;
+     
+ }
+
+ h2{
+     color:black;
+     font-size: 45px;
+     line-height:50px ;
+     font-weight: bold;
+
+ }
+
+ h3{
+     color:rgb(22, 16, 6);
+     font-size: 20px;
+     line-height: 28px;
+     margin: 10px 0;
+ }
+
+ form{
+     margin-top: 20px;
+ }
+
+ form input{
+     width: 300px;
+     padding-left: 15px;
+     font-size: 18px;
+     height: 45px;
+     margin-bottom: 13px;
+     border-radius: 20px;
+     border: 2px solid blueviolet;
+ }
+
+ form [type="submit"]{
+     background-color: blue;
+     color: rgb(9, 50, 86);
+ }
+
+ form [type="submit"]:hover{
+     cursor:pointer;
+ }
+
+ main .container-main{
+     width: 600px;
+ }
+
+ /*CARDS
+
+ .cards{
+     width: 90%;
+     max-width: 940px;
+     margin: auto;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+     grid-gap:20px;
+ }
+
+ .text-medium{
+     font-size: 16px;
+     line-height: 26px;
+     font-weight: 400;
+     color:blueviolet;
+ }
+
+ .card{
+     display: flex;
+     flex-direction: column;
+     cursor: pointer;
+     box-shadow: 5px 5px 15px -4px black;
+     transition: all 0.3s ease 0s;
+ }
+
+ .card:hover{
+     transform: translateY(-7px);
+    
+ }
+
+ .image{
+     width: 100%;
+     padding-top: 56%;
+     overflow: hidden;
+     position: relative;
+
+ }
+
+ image .img{
+     position: absolute;
+     border-radius: 10px;
+     top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+ }
+
+ .content{
+     margin: 20px;
+ }
+
+ .title{
+     margin-bottom: 0px;
+ }
+
+ .desafio{
+     font-size: 100px;
+     display: flex;
+     justify-content: center;
+     height: 400px;
+     align-items: center;
+     border: 1px solid black;
+     margin:100px auto;
+     max-width: 940px;
+ }
+
+@media(max-width:1000px){
+    main .container-main div{
+        margin:auto;
+    }
+
+    main .container-main img{
+        display: none;
+
+    }
+
+    h2{
+        margin-left: 50px;
+    }
+
+    div h3{
+        margin-left: 50px;
+    }
+
+    form{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-top: 30px;
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+    input{
+        margin: 12px;
+    }
+}
+
+@media (min-height:631px){
+    .container-menu{
+        display: none;
+    }
+}
+
+@media (max-width){
+    .container{
+        padding:0px 20px;
+    }
+
+}
+
+@media (max-width:630px){
+
+    nav{
+        display: none;
+    }
+
+    main .container-menu img{
+        display: none;
+    }
+
+    .container-menu{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #checkbox-menu{
+        position: absolute;
+        opacity: 0;
+    }
+
+    label{
+        cursor: pointer;
+        position: relative;
+        display: block;
+        height: 22px;
+        width: 30px;
+    }
+
+    label span{
+        position: absolute;
+        display: block;
+        height: 5px;
+        width: 100%;
+        background: white;
+        border-radius: 30px;
+        transition: 0.25s ease-in-out;
+    }
+
+    label span:nth-child(1){
+        top:0;
+    }
+
+    label span:nth-child(2){
+        top:8px;
+    }
+
+    label span:nth-child(3){
+        top:16px;
+    }
+
+    #checkbox-menu:checked+label span:nth-child(1){
+        transform: rotate(-45deg);
+        top:8px;
+
+    }
+    #checkbox-menu:checked+label span:nth-child(2){
+        opacity: 0;
+    }
+
+    #checkbox-menu:checked+label span:nth-child(3){
+        transform: rotate(45deg);
+        top:8px
+    }
+}
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html,
+body {
+    height: 100vh;
+    font-family: "Source Sans Pro", 'Times New Roman';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+} 
+
+/* HEADER */
+
+header {
+    background-color: #0080ed;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    height: 80px;
+    margin: auto;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 24px;
+    transition: all 250ms linear 0s;
+}
+
+header nav ul li a:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+header .container img{
+    height: 30px;
+}
+
+/* MAIN */
+main {
+    margin-bottom: 100px;
+}
+
+main .container-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 100px auto 0px auto;
+}
+
+h2{
+    color: rgb(0,0,0);
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+h3{
+    color: rgb(131,131,131);
+    font-size: 20px;
+    line-height: 28px;
+    margin: 10px 0;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input {
+    width: 380px;
+    padding-left: 15px;
+    font-size: 18px;
+    height: 45px;
+    margin-bottom: 13px;
+    border-radius: 20px;
+    border: 2px solid #0080ed;
+}
+form [type="submit"] {
+    background-color: #0080ed;
+    color: white;
+}
+form [type="submit"]:hover {
+    cursor: pointer;
+}
+
+main .container-main img{
+    width: 600px;
+}
+
+/* CARDS */
+
+.cards {
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.text--medium{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: rgb(187,185,185);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px -4px #000000;
+    transition: all 0.3s ease 0s;
+}
+
+.card:hover{
+    transform: translateY(-7px);
+}
+
+.image {
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image img{
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    margin:20px;
+}
+
+.title{
+    margin-bottom:0px;
+}
+
+/*.desafio {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    height:150px;
+    align-items: center;
+    border: 1px solid black;
+    margin: 10px 10px ;
+    padding: 12px;
+    max-width: 980px;
+}*/
+.container-forms{
+    border-radius: 5%;
+    border: 2px solid black;
+    max-width: 500px;
+    width: 100%;
+    margin: 10px auto;
+    position: relative;
+    justify-content:center;
+    align-items: center;
+}
+ 
+.forms{
+    display: inline-block;
+    width: 90%;
+    margin: 10px 40px;
+
+}
+
+.container-forms fieldset{
+    border: medium none !important;
+    margin:0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+
+.container-forms legend, p{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin:5px 15px;
+}
+
+.forms div label{
+    display: flexbox;
+    flex-direction: column;
+    margin: 5px 0 5px 15px;
+    justify-content:center;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+.forms div input{
+    width: 90%;
+    margin-left: 10px;
+    padding: 10px;
+    background-color:rgb(142, 142, 241);
+    justify-content:center;
+    align-items: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    color:brown;
+
+}
+.forms div textarea{
+    width: 90%;
+    height: 120px;
+    margin-left: 10px;
+    padding: 5px;
+    background-color: rgb(142, 142, 241);
+    border-radius: 20px;
+    border: 2px solid #0080ed;
+    justify-content:center;
+    align-items: center;
+    font-size: 18px;
+   
+}
+
+.forms div textarea:hover{
+    background-color: azure;
+   cursor: pointer;
+   transition: 0.3s ease-in-out;
+}
+
+.forms div input:hover{
+   background-color: azure;
+   cursor: pointer;
+   transition: 0.3s ease-in-out;
+
+}
+.forms div input::placeholder{
+    justify-content:center;
+    align-items: center;
+    font-size: 15px;
+    text-transform:none;
+    color:rgb(42, 2, 2);
+
+}
+.container .radio{
+    width: 90%;
+    display: flex;
+    position: relative;
+
+}
+.container-forms .radio label{
+    position:absolute;
+    width: 10%;
+    display: block;
+    margin-top:20px;
+    margin-left: 60px;
+    padding: 0;
+  
+}
+
+.container-forms .radio input{
+    height: 20px;
+    width: 10%;
+    margin-top:20px;
+   
+}
+
+
+
